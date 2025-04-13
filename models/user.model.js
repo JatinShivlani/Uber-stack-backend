@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        // when we will find user it will not sent back password to client
+        // when we will find user it will not sent back password to client by default
         select: false,
     },
     // for tracking rider location
